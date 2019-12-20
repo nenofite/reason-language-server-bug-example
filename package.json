@@ -1,0 +1,21 @@
+{
+    "name": "example",
+    "version": "0.1.0",
+    "esy": {
+        "build": "refmterr dune build -p #{self.name}",
+        "buildEnv": {
+            "ODOC_SYNTAX": "re"
+        }
+    },
+    "dependencies": {
+        "@opam/dune": "*",
+        "@esy-ocaml/reason": ">= 3.4.0 < 3.6.0",
+        "refmterr": "*",
+        "ocaml": "~4.8.1000"
+    },
+    "devDependencies": {
+        "@opam/merlin": "*",
+        "ocaml": "~4.8.1000",
+        "@opam/odoc": "*"
+    }
+}
